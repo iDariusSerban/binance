@@ -65,7 +65,7 @@ public class KlineService {
         JsonNode klinearraynode = root.get(0);          //iau din root primul element al array-ului = klinearraynode
         Kline kline = new Kline();
 
-//        for (int i = 0; i < 5; i++) {
+
         kline.setKlineOpenTime(klinearraynode.get(0).asLong());     //iau elementul de la fiecare pozitie din klinearraynode si il atribui atributului corespunzator din kline pe care il voi salva
         kline.setOpenPrice(klinearraynode.get(1).asText());
         kline.setHighPrice(klinearraynode.get(2).asText());
